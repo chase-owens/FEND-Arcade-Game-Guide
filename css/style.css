@@ -1,0 +1,220 @@
+body {
+  padding: 10px 10px 10px 10px;
+  margin: 0;
+  width: 850px;
+  margin: auto;
+}
+
+.nav-header {
+  text-align: center;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+  opacity: 1;
+}
+
+.modal-a {
+  display: block;
+}
+
+.modal-b {
+  display: none;
+}
+
+.modal-overlay-content {
+  width: 500px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: linear-gradient(#fff, #999);
+}
+
+.close {
+  background: #606061;
+  color: #fff;
+  line-height: 15px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+  background: #00d9ff;
+}
+
+.udacity-course,
+.cranford-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+.udacity-course:hover {
+  background: grey;
+  color: #33b5e5;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.cranford-link:hover {
+  background: #36454f;
+  color: hotpink;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+code {
+  background: #36454f;
+  color: limegreen;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.goal-image {
+  float: right;
+  padding-left: 10px;
+}
+
+.current {
+  clear: both;
+}
+
+.current-container {
+  display: flex;
+  padding-top: 0;
+  margin-top: 0;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.current-container-item {
+  width: 40%;
+  border: thin solid black;
+  background: linear-gradient(#fff, #999);
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.current-title {
+  padding-left: 20px;
+}
+
+.program-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 850px;
+  margin: auto;
+}
+
+.bottom-container {
+  display: flex;
+}
+
+.support-display {
+  width: 100%;
+  height: 425px;
+}
+
+.left-side {
+  flex: 1;
+}
+
+.right-side {
+  flex: 1;
+}
+
+.r-full {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.r-50 {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.r-item {
+  width: 100px;
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.r-item:hover {
+  cursor: grab;
+}
+
+.r-item > p {
+  padding-top: 8px;
+}
+
+.r1 > .r-item {
+  background: linear-gradient(#fff, #ff0);
+}
+
+.r2 > .r-item {
+  background: linear-gradient(#fff, #cf0);
+}
+
+.r3 > .r-item {
+  background: linear-gradient(#fff, #6f6);
+}
+
+.r4 > .r-item {
+  background: linear-gradient(#fff, #0fc);
+}
+
+.r5 > .r-item {
+  background: linear-gradient(#fff, #0ff);
+}
+
+.r2,
+.r3 {
+  margin-left: 5.4%;
+}
+
+.r4 {
+  margin-left: 100px;
+}
+
+.r5 {
+  display: flex;
+  justify-content: center;
+}
+
+.second-item {
+  margin-left: 9.5%;
+}
+
+.bullets {
+  margin-top: 20px;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: blue;
+}

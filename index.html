@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FEND Classic Arcade Game Guide</title>
+  <meta name="description" content="DESCRIPTION">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1 class="nav-header">Udacity FEND Classic Arcade Game Guide</h1>
+    </nav>
+  </header>
+
+  <div class="modal-overlay">
+    <div class="modal-overlay-content">
+      <button class="hide-modal close" title="Close">X</button>
+      <div>
+        <h2 class="modal-heading">What is this?</h2>
+        <p class="modal-content">
+          This is intended to be a guide to complete the Arcade Game Project independently. If you experience
+          difficulties along the way, I’d be interested in hearing what questions you had, not addressed here, that
+          were critical in your building the Arcade Game to specifications.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="modal-heading">Who is this for?</h2>
+        <p class="modal-content">
+          This guide targets everyone that wants to build the project independently without looking at someone else’s
+          code. While we can all agree that looking at others code is useful to learning how to code, we eventually
+          want to get to a point where we can take a wire frame and site map and turn it into a fully functional app
+          with nothing but our skills and determination to make it happen. This is designed to assist you in that
+          journey.
+
+          This assumes that you can recognize and write HTML, CSS, and that you have been exposed to <a target="_blank"
+            class="udacity-course" href="https://www.udacity.com/course/intro-to-javascript--ud803">Intro to
+            JavaScript</a> and the <a target="_blank" class="udacity-course" href="https://www.udacity.com/course/object-oriented-javascript--ud711">Object
+            Oriented Javascript</a> lessons.
+        </p>
+        <button class="hide-modal button">I'm ready to complete the Arcade Game Project!</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="intro">
+      <p>
+        If you’re like most of the students who have arrived at this project before you, you’ve probably read and
+        perhaps even re-read the instructions and project rubric, downloaded the starter files, found that opening
+        the index.html file only yields a blank screen, and are now wandering where the heck to start. You're
+        definitely not alone in that reaction. If you are feeling frustrated or saddened that this project is giving
+        you trouble, that tells me you really want to learn the material and really want to complete this project. This
+        guide was created to assist your efforts.
+    </section>
+
+    <section class="goal">
+      <h2 class="section-headers">What is the goal?</h2>
+      <div class="goal-container">
+        <div class="goal-container-item goal-content">
+          <img class="goal-image" src="images/game.png" alt="">
+          <p>
+            The Arcade Game will have a game play area, a “Player” or “Hero” character, and at least 3 Enemy
+            characters
+            and should be built using Object-Oriented Programming (OOP) practices. A win occurs when the Player
+            navigates across the road around the moving Enemies and
+            reaches
+            the
+            water. When the Player reaches the water,
+            a modal appears congratulating the user. If the user fails to navigate the Player pass the enemies and
+            collides with an Enemy, the Player’s position is reset to the start position.
+          </p>
+
+          <p>
+            The Player character moves within the bounds of the game play area using the arrow keys. And when the
+            Player
+            reaches the water at the top of the game play area, a modal appears, and the player position resets.
+          </p>
+
+          <p>
+            The modal should display over the game play area displaying a congratulations message and a button that
+            closes the modal when pressed.
+          </p>
+
+          <p>
+            There will be at least 3 enemies. Each Enemy moves across the road from left to right at varying speeds.
+            When the
+            Enemy
+            reaches the end
+            of the road, it reappears from the left again.
+          </p>
+
+          <p>
+            In the event that the Player collides with an Enemy, the Player is reset to the starting position.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="current">
+      <h2 class="section-headers">Where are we now in relation to the goal?</h2>
+      <p>Gather information, assets, and other resources that will assist our pursuit of the goal.</p>
+
+      <div class="current-container">
+        <div class="current-container-item top" height="300">
+          <h3 class="current-title">Instructions</h3>
+          <hr>
+          <ul>
+            <li>
+              There are a list of instructions!!
+            </li>
+            <li>
+              The instructions specify work will be done in <code>app.js</code> file
+            </li>
+            <li>
+              How to complete <code>Enemy</code> object(function)
+            </li>
+            <li>
+              How to model <code>Player</code> object after <code>Enemy</code> object
+            </li>
+            <li>
+              How to add <code>handleInput</code> and <code>reset</code> method to <code>Player</code> object
+            </li>
+            <li>
+              To create 3 <code>Enemy</code> objects and add them to an <code>allEnemies</code> array
+            </li>
+            <li>To create a <code>Player</code> object</li>
+            <li>
+              Images are provided. Using images requires them being added to <code>Resources.load()</code> function
+              in
+              Engine.js
+            </li>
+          </ul>
+        </div>
+        <div class="current-container-item top" height="300">
+          <h3 class="current-title">Starter Code</h3>
+          <hr>
+          <ul>
+            <li>
+              ES5 classes
+            </li>
+            <li>
+              <code>Enemy</code> object provided (A constructor function)
+            </li>
+            <ul>
+              <li class="nested-element">
+                Render method <code>(Resources.get(this.sprite, x-coordinate, y-coordinate);</code>
+              </li>
+            </ul>
+            <li>
+              Event listener that picks up arrow keys
+            </li>
+            <li>
+              Is there any more information provided about what form the <code>Player</code> object should take in
+              <code>Engine.js</code>?
+              The Player instance name?
+            </li>
+            <li>
+              Matt Cranford provides <a class="cranford-link" href="https://matthewcranford.com/arcade-game-walkthrough-part-1-starter-code-breakdown/">a
+                great in-depth
+                analysis of the starter code</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="program">
+      <h2 class="section-headers">How do we get there?</h2>
+      <p>
+        Here we formulate the plan by developing the program and its directions. It is a good practice to break down
+        the goal into smaller goals. There are many strategies used to assist efforts—below are some of my favorites.
+      </p>
+      <ol>
+        <li>
+          Google any question you might have. Google anything you don’t know. Read the answers on Stack Overflow. If
+          your results do not contain what you were looking for, reword the search. Add keywords that would help.
+        </li>
+        <li>
+          Don't copy and paste code. Write it out.
+        </li>
+        <li>Practice often.</li>
+        <li>
+          Build and test functionality of components in isolation if possible. Use <a class="link" target="_blank" href="https://codepen.io">CodePen</a>
+          or a JS Playground like the one found at <a class="link" target="_blank" href="https://jscomplete.com">JSComplete.</a>
+        </li>
+        <li>
+          Break problems down into parts.
+        </li>
+      </ol>
+      <p><strong>Click any box for guidance in that area.</strong></p>
+      <div class="program-container">
+        <div class="r1 r-full">
+          <div id="add-scene" class="r-item">
+            <p>Add Game Play Area</p>
+          </div>
+          <div id="fix-console" class="r-item">
+            <p>Resolve Console Errors</p>
+          </div>
+          <div id="object-syntax" class="r-item">
+            <p>ES5 or ES6</p>
+          </div>
+          <div id="create-enemy" class="r-item">
+            <p>Finish Enemy Object</p>
+          </div>
+          <div id="create-player" class="r-item">
+            <p>Build Player Object</p>
+          </div>
+          <div id="create-modal" class="r-item">
+            <p>Construct Modal</p>
+          </div>
+        </div>
+        <div class="bottom-container">
+          <div class="left-side">
+            <div class="support-display">
+              <h3 class="support-header"></h3>
+              <hr>
+              <ul class="support-content"></ul>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="r2 r-50">
+              <div id="render-enemies" class="r-item">
+                <p>Render Enemies</p>
+              </div>
+              <div id="render-player" class="r-item second-item">
+                <p>Render Player</p>
+              </div>
+            </div>
+            <div class="r3 r-50">
+              <div id="move-enemies" class="r-item">
+                <p>Move Enemies</p>
+              </div>
+              <div id="move-player" class="r-item second-item">
+                <p>Move Player</p>
+              </div>
+            </div>
+            <div class="
+                r4 r-50">
+              <div id="handle-collision" class="r-item">
+                <p>Handle Collision</p>
+              </div>
+              <div id="handle-win" class="r-item second-item">
+                <p>Handle Win</p>
+              </div>
+            </div>
+            <div class="
+                  r5 r-50">
+              <div id="submit-project" class="r-item">
+                <p>Submit Project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+<script src="js/app.js"></script>
+
+</html>
