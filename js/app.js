@@ -132,13 +132,11 @@ let questionsArray = [
     type: "handle-collision",
     title: "Handle Collision",
     questions: [
-      "Are you enemies moving?",
-      "Is you player moving?",
       "Does your player have a resetPosition method?",
-      "What exactly are you checking for?",
-      "Can you write what needs to happen as an if.. then.. statement?",
-      "What properties of player and enemy intersect?",
-      "Can you identify the coordinates of your player as the move around the board?"
+      "What is similar about player and enemy properties when a collision occurs?",
+      "What is you player's y-coordinate when possibly colliding with allEnemies[0]?",
+      "So when player.y is === <the answer to the question above>, what else are you checking for?,
+      "How far apart are the player and enemy x-coordinates when a collision occurs?"
     ]
   },
   {
