@@ -135,7 +135,7 @@ let questionsArray = [
       "Does your player have a resetPosition method?",
       "What is similar about player and enemy properties when a collision occurs?",
       "What is you player's y-coordinate when possibly colliding with allEnemies[0]?",
-      "So when player.y is === <the answer to the question above>, what else are you checking for?",
+      "So when player.y is === (the answer to the question above), what else are you checking for?",
       "How far apart are the player and enemy x-coordinates when a collision occurs?"
     ]
   },
